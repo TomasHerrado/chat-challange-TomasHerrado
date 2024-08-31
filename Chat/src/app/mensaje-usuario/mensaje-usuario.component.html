@@ -1,0 +1,12 @@
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h5 class="card-title">{{usuario}}</h5>
+        <form (ngSubmit)="enviarMensaje()">
+            <div class="form-group">
+                <textarea class="form-control" id="mensaje" [(ngModel)]="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+        </form>
+    </div>
+</div>
+
